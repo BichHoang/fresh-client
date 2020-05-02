@@ -12,7 +12,7 @@
     <!-- Favicons Icon -->
     <link rel="icon" href="%PUBLIC_URL%/images/favicon.png" type="image/x-icon" />
     <link rel="shortcut icon" href="%PUBLIC_URL%/images/favicon.png" type="image/x-icon" />
-    <title>Freshia premium HTML5 &amp; CSS3 template</title>
+    <title>Freshia</title>
 
     <!-- Mobile Specific -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -29,13 +29,28 @@
     <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/css/flexslider.css" />
     <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/css/jquery.mobile-menu.css" />
 
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/css/custom.css" />
+    
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/vendors/css/vendor.bundle.base.css">
+    
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,600,800,400' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i,900" rel="stylesheet">
   </head>
   <body>
     <div id="root"></div>
-
+    <!--Admin-->
+    <script src="%PUBLIC_URL%/assets/vendors/js/vendor.bundle.base.js"></script>
+    <script src="%PUBLIC_URL%/assets/vendors/chart.js/Chart.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/off-canvas.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/hoverable-collapse.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/misc.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/dashboard.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/todolist.js"></script>
+    <!--End Admin-->
     <!-- JavaScript --> 
     <script src="%PUBLIC_URL%/js/jquery.min.js"></script> 
     <script src="%PUBLIC_URL%/js/bootstrap.min.js"></script> 
@@ -44,6 +59,7 @@
     <script src="%PUBLIC_URL%/js/owl.carousel.min.js"></script> 
     <script src="%PUBLIC_URL%/js/jquery.mobile-menu.min.js"></script> 
     <script src="%PUBLIC_URL%/js/countdown.js"></script> 
+
     <script>
     jQuery(document).ready(function() {
       jQuery('#rev_slider_4').show().revolution({
@@ -102,22 +118,6 @@
     });
     });
     </script> 
-    <!-- Hot Deals Timer 1--> 
-    <script>
-    var dthen1 = new Date("12/25/17 11:59:00 PM");
-      start = "08/04/15 03:02:11 AM";
-      start_date = Date.parse(start);
-      var dnow1 = new Date(start_date);
-      if (CountStepper > 0)
-      ddiff = new Date((dnow1) - (dthen1));
-      else
-      ddiff = new Date((dthen1) - (dnow1));
-      gsecs1 = Math.floor(ddiff.valueOf() / 1000);
-      
-      var iid1 = "countbox_1";
-      CountBack_slider(gsecs1, "countbox_1", 1);
-    </script>
-
     <script> 
       $(function(){
         $("#head").load("./head.html"); 

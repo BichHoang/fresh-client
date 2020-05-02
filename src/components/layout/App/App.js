@@ -1,31 +1,33 @@
 import React, { Component } from 'react';
-import BrandLogo from '../../common/BrandLogo';
-import Footer from '../../common/Footer';
-import Header from '../../common/Header';
-import MobileMenu from '../../common/MobileMenu';
-import OurFeatures from '../../common/OurFeatures';
-import RouterURL from '../../../routers/RouterURL';
-
-import { BrowserRouter as Router } from "react-router-dom";
+import routes from '../../../routes';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 class App extends Component {
   render() {
     return (
-      
-    <Router>
-        <div id="page">
-          <Header />
-
-          <RouterURL />
-
-          <BrandLogo />
-          <OurFeatures />
-          <Footer />
+      <Router>
+        <div>
+          {this.showContent(routes)}
         </div>
-        <MobileMenu />
-    </Router>
+      </Router>
     );
   }
-}
 
+  showContent = (routes) => {
+    var result = null;
+    if (routes.length > 0) {
+      result = routes.map((route, index) => {
+        return (
+          <Route
+            key={index}
+            path={route.path}
+            exact={route.exact}
+            component={route.main}
+          />
+        );
+      });
+    }
+    return <Switch>{result}</Switch>;
+  }
+}
 export default App;

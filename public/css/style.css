@@ -1,59 +1,3 @@
-/*
-Theme Name: Freshia
-Theme URI: http://themessoft.com/
-Author: themessoft
-Author URI: https://www.themessoft.com/
-Description:  Freshia HTML Template
-Version: 1.4
-License: GNU General Public License v2 or later
-Tags: two-columns, left-sidebar, fixed-layout, responsive-layout, custom-background, custom-colors, custom-header, custom-menu
-Text Domain:  Freshia
-*/
-/* TABLE OF CONTENTS
-
-1. Body
-
-2. Layout 
-
-3. Header
-
-4. Navigation
-
-5. Features Box
-
-6. Top Banner Section	
-
-7. Home page Sliders
-
-8. Home Products Tab
-
-9. Products Grid 
-
-10. Products List
-
-11.  Rating and Price
-
-12.  Latest-Blog
-
-13.  Breadcrumbs
-
-14.  Sidebar
-
-15.  Product Sorting Toolbar  
-
-16.  Product View
-
-17.  Global Messages
-
-18.  Footer
-
-19.  Responsive
-
-/* */
-
-
-/*----------- 1. Body --------------*/
-
 body {
 
 	font-family: 'Open Sans', sans-serif;
@@ -1060,7 +1004,7 @@ background:#f6f6f6
 /*----------- 4. Navigation -------------*/
 
 /*========== 4. Navigation ==========*/
-
+/* 
 nav {
 	position: relative;
 	margin: auto;
@@ -1068,7 +1012,7 @@ nav {
 	z-index: 99;
 		font-family: 'Rubik', sans-serif;
 
-}
+} */
 
 
 .cms-index-index .nav-inner {
@@ -1112,10 +1056,10 @@ nav {
 #nav > li > a:last-child a {
 	color: #333
 }
-.nav {
+/* .nav {
 	width: 1000px;
 	margin: 0px auto 0
-}
+} */
 #nav > li:hover > a, .vertnav-top li > a:hover {
 	color: #fff;
 	border-bottom: none;
